@@ -217,7 +217,10 @@ class VisicomReverseGeocoder:
 
 
     def run(self):
-        self.canvas.setMapTool(self.mapPointTool)
+        if self.settings['AUTH_KEY'] == '':
+            self.iface.messageBar().pushMessage("Error", "You need to get Visicom API key, see Settings", level=Qgis.Critical)
+        else:
+            self.canvas.setMapTool(self.mapPointTool)
 
     def show_about(self):
         infoString = """<b>Visicom reverse geocoding</b><br><br>
