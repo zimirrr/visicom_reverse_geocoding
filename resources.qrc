@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/visicom_reverse_geocoding" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
