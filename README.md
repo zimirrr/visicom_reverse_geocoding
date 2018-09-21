@@ -1,2 +1,2 @@
-# visicom_reverse_geocode
+# visicom_reverse_geocoding
 qgis plugin for reverse geocoding from visicom api
